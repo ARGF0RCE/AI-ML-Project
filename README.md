@@ -38,7 +38,7 @@ This project aims to create an interactive summarizer using Large Language Model
 
 1. Clone the repo
    ```bash
-   git clone https://github.com/your-username/COVID-19-Article-Summarizer.git
+   git clone https://github.com/ARGF0RCE/AI-ML-Project.git
    ```
 
 2. Navigate to the directory
