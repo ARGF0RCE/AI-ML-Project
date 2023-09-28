@@ -1,2 +1,29 @@
-.venv/
-.venv/*
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info
+dist/
+build/
+*.egg
+
+# Data
+data/
+*.csv
+
+# Logs
+logs/
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# Compiled files
+*.class
+*.jar
+
+# Miscellaneous
+.DS_Store
+*.swp
+*.swo
