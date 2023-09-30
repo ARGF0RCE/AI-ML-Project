@@ -1,18 +1,41 @@
 {
   "name": "ai-ml-project",
-  "version": "1.0.0",
-  "description": "## Table of Contents 1. [Project Overview](#project-overview) 2. [Getting Started](#getting-started)     1. [Prerequisites](#prerequisites)     2. [Installation](#installation) 3. [System Architecture](#system-architecture) 4. [Dataset](#dataset) 5. [Model](#model) 6. [MLOps and CI/CD Pipeline](#mlops-and-ci-cd-pipeline) 7. [User Interface](#user-interface) 8. [Usage](#usage) 9. [Testing](#testing) 10. [Contributing](#contributing) 11. [License](#license) 12. [Acknowledgements](#acknowledgements)",
-  "main": "index.js",
+  "private": true,
+  "version": "0.0.0",
+  "type": "commonjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "concurrently \"npm run server\" \"npm run dev\"",
+    "server": "tsc server/index.ts && node server/index.js",
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "axios": "^1.5.1",
     "cors": "^2.8.5",
+    "d3": "^7.8.5",
     "express": "^4.18.2",
-    "node-cron": "^3.0.2"
+    "node-cron": "^3.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.14",
+    "@types/d3": "^7.4.1",
+    "@types/express": "^4.17.18",
+    "@types/node": "^20.8.0",
+    "@types/node-cron": "^3.0.9",
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@vitejs/plugin-react": "^4.0.3",
+    "concurrently": "^8.2.1",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5"
   }
 }

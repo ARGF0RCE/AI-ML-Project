@@ -1,8 +1,8 @@
-const express = require('express');
-const axios = require('axios');
-const cors = require('cors');
-const path = require('path');
-const cron = require('node-cron');
+import * as express from 'express';
+import * as cors from 'cors';
+import * as path from 'path';
+import * as cron from 'node-cron';
+import axios from 'axios';
 
 const app = express();
 const PORT = 3000;

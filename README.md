@@ -13,19 +13,19 @@
 
 ## Introduction
 
-The aim of this project is to visualize and analyze the monthly peak power supply across India, both at a national and statewise level. The project fetches real-time data from a public API provided by the Central Electricity Authority of India and presents it in an interactive dashboard using D3.js. This dashboard serves as a valuable resource for stakeholders in the energy sector, researchers, and policy-makers to make informed decisions.
+The aim of this project is to visualize and analyze the monthly peak power supply across India, both at a national and statewise level. The project fetches real-time data from a public API provided by the Central Electricity Authority of India and presents it in an interactive dashboard. The dashboard is built using React for the frontend and D3.js for data visualization. This serves as a valuable resource for stakeholders in the energy sector, researchers, and policy-makers to make informed decisions.
 
 ## Features
 
 - **Real-time Data Fetching**: The backend fetches the latest available data every month.
-- **Interactive Dashboard**: Utilizes D3.js for creating an interactive visualization of the data.
+- **Interactive Dashboard**: Utilizes React and D3.js for creating an interactive visualization of the data.
 - **Historical Analysis**: Allows users to view trends over different time periods.
 - **Statewise Breakdown**: Offers insights into the peak power supply situation across different states.
 
 ## Technologies Used
 
 - **Backend**: Node.js with Express
-- **Frontend**: HTML, CSS, JavaScript with D3.js for visualization
+- **Frontend**: React, HTML, CSS, JavaScript with D3.js for visualization
 - **Scheduling**: node-cron for periodic data fetching
 - **Data Source**: RESTful API from Central Electricity Authority of India
 
@@ -38,7 +38,7 @@ The aim of this project is to visualize and analyze the monthly peak power suppl
 
 2. Navigate to the project directory
     ```bash
-    cd your-repository-name
+    cd AI-ML-Project.md
     ```
 
 3. Install the required packages
@@ -46,12 +46,12 @@ The aim of this project is to visualize and analyze the monthly peak power suppl
     npm install
     ```
 
-4. Start the server
+4. Start both the React and Express servers
     ```bash
-    node index.js
+    npm start
     ```
 
-5. The server will start on `http://localhost:3000`. Open it in a web browser to access the dashboard.
+5. The React app will start on `http://localhost:5173` and the Express server will run in parallel. Open the React app in a web browser to access the dashboard.
 
 ## Usage
 

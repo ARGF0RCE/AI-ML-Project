@@ -1,0 +1,10 @@
+.dashboard {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#chart {
+  width: 800px;
+  height: 600px;
+  margin: auto;
+}
