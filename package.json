@@ -1,0 +1,18 @@
+{
+  "name": "ai-ml-project",
+  "version": "1.0.0",
+  "description": "## Table of Contents 1. [Project Overview](#project-overview) 2. [Getting Started](#getting-started)     1. [Prerequisites](#prerequisites)     2. [Installation](#installation) 3. [System Architecture](#system-architecture) 4. [Dataset](#dataset) 5. [Model](#model) 6. [MLOps and CI/CD Pipeline](#mlops-and-ci-cd-pipeline) 7. [User Interface](#user-interface) 8. [Usage](#usage) 9. [Testing](#testing) 10. [Contributing](#contributing) 11. [License](#license) 12. [Acknowledgements](#acknowledgements)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.5.1",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "node-cron": "^3.0.2"
+  }
+}

@@ -1,107 +1,72 @@
-# COVID-19 Article Summarizer and QA System
+# Visualization and Analysis of Monthly Peak Power Supply of India and Statewise
 
 ## Table of Contents
-1. [Project Overview](#project-overview)
-2. [Getting Started](#getting-started)
-    1. [Prerequisites](#prerequisites)
-    2. [Installation](#installation)
-3. [System Architecture](#system-architecture)
-4. [Dataset](#dataset)
-5. [Model](#model)
-6. [MLOps and CI/CD Pipeline](#mlops-and-ci-cd-pipeline)
-7. [User Interface](#user-interface)
-8. [Usage](#usage)
-9. [Testing](#testing)
-10. [Contributing](#contributing)
-11. [License](#license)
-12. [Acknowledgements](#acknowledgements)
 
-## Project Overview
+1. [Introduction](#introduction)
+2. [Features](#features)
+3. [Technologies Used](#technologies-used)
+4. [Installation and Setup](#installation-and-setup)
+5. [Usage](#usage)
+6. [Data Sources](#data-sources)
+7. [Contributing](#contributing)
+8. [License](#license)
 
-This project aims to create an interactive summarizer using Large Language Models (LLMs) to analyze and summarize articles related to COVID-19. The application is built with an emphasis on engineering applicability and serves as a proof-of-concept for integrating AI/ML in real-world applications. It has several components:
+## Introduction
 
-- Data engineering to handle COVID-19 articles
-- Fine-tuned Large Language Model for summarization and Q&A
-- MLOps and CI/CD pipeline for model training, validation, and deployment
-- User interface for interaction
+The aim of this project is to visualize and analyze the monthly peak power supply across India, both at a national and statewise level. The project fetches real-time data from a public API provided by the Central Electricity Authority of India and presents it in an interactive dashboard using D3.js. This dashboard serves as a valuable resource for stakeholders in the energy sector, researchers, and policy-makers to make informed decisions.
 
-## Getting Started
+## Features
 
-### Prerequisites
+- **Real-time Data Fetching**: The backend fetches the latest available data every month.
+- **Interactive Dashboard**: Utilizes D3.js for creating an interactive visualization of the data.
+- **Historical Analysis**: Allows users to view trends over different time periods.
+- **Statewise Breakdown**: Offers insights into the peak power supply situation across different states.
 
-- Python 3.x
-- Git
-- Docker
-- Node.js (for frontend)
+## Technologies Used
 
-### Installation
+- **Backend**: Node.js with Express
+- **Frontend**: HTML, CSS, JavaScript with D3.js for visualization
+- **Scheduling**: node-cron for periodic data fetching
+- **Data Source**: RESTful API from Central Electricity Authority of India
 
-1. Clone the repo
-   ```bash
-   git clone https://github.com/ARGF0RCE/AI-ML-Project.git
-   ```
+## Installation and Setup
 
-2. Navigate to the directory
-   ```bash
-   cd COVID-19-Article-Summarizer
-   ```
+1. Clone the repository
+    ```bash
+    git clone https://github.com/ARGF0RCE/AI-ML-Project.git
+    ```
 
-3. Install Python dependencies
-   ```bash
-   pip install -r requirements.txt
-   ```
+2. Navigate to the project directory
+    ```bash
+    cd your-repository-name
+    ```
 
-4. Run the application
-   ```bash
-   python app.py
-   ```
+3. Install the required packages
+    ```bash
+    npm install
+    ```
 
-## System Architecture
+4. Start the server
+    ```bash
+    node index.js
+    ```
 
-The system comprises four primary components:
-
-1. **Data Ingestion**: Scripts to fetch and pre-process articles.
-2. **Model Training**: Fine-tuning a pre-trained LLM.
-3. **MLOps and CI/CD Pipeline**: Jenkins pipeline to train, test, and deploy the model.
-4. **User Interface**: A web interface built using React.js.
-
-## Dataset
-
-The dataset comprises scholarly articles, research papers, and news reports concerning COVID-19. All data sources are credible and peer-reviewed, ranging from repositories like arXiv, PubMed, and trusted news outlets.
-
-## Model
-
-We utilize a fine-tuned version of the GPT-3 model for both summarization and question-answering tasks. The model is fine-tuned on the COVID-19 dataset to improve its relevance and accuracy for this particular domain.
-
-## MLOps and CI/CD Pipeline
-
-1. **Training Pipeline**: Automatic training is set up using Jenkins. It fetches the latest data, trains the model, and validates it.
-2. **Deployment Pipeline**: Upon successful validation, the model is containerized using Docker and deployed.
-3. **Continuous Monitoring**: Metrics like model accuracy, latency, and throughput are continuously monitored.
-
-## User Interface
-
-The UI is developed using React.js and provides an interactive way for users to upload articles and receive summaries and answers to specific questions.
+5. The server will start on `http://localhost:3000`. Open it in a web browser to access the dashboard.
 
 ## Usage
 
-1. Open the web interface.
-2. Upload or paste the COVID-19 article you wish to analyze.
-3. Click on "Summarize" to get the article summary.
-4. Optionally, you can ask questions related to the article.
+- **View National Trends**: The dashboard initially displays the all-India trend.
+- **Select State**: Use the dropdown menu to select a specific state for more localized data.
+- **Time Period**: Choose the time range to analyze historical trends.
 
-## Testing
+## Data Sources
 
-The application has undergone rigorous testing to validate its functionality and performance. Unit tests and end-to-end tests are implemented to ensure system robustness.
+The data for this project is sourced from the Central Electricity Authority of India via their public API.
 
 ## Contributing
 
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+If you'd like to contribute, please fork the repository and make changes as you'd like. Pull requests are warmly welcome.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
-
-## Acknowledgements
-
-Special thanks to the course "AI/ML for Engineering Applications" for providing the motivation and foundational knowledge required for this project.
+MIT License. See the [LICENSE](LICENSE.md) file for more details.
