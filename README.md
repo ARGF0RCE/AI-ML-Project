@@ -38,7 +38,7 @@ The aim of this project is to visualize and analyze the monthly peak power suppl
 
 2. Navigate to the project directory
     ```bash
-    cd AI-ML-Project.md
+    cd AI-ML-Project
     ```
 
 3. Install the required packages
